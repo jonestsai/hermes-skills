@@ -40,8 +40,8 @@ Rigorous, verifiable engineering discipline: reproduce before fixing, root cause
 - `control-ui` (browser/Electron/web UI verification) → `browser_exec` or `drive_preview`; `control-cli` (CLI/TUI verification) → `terminal` with `pty=true` where interactive. These carry pstack's "prove it on the real surface" discipline — always verify on the actual artifact, never just unit tests.
 - Cursor `environment: "cloud"` agents / cloud-sleeper wake chains → `delegate_task` children (local); wake cadences → `cronjob` scheduled ticks.
 - `/loop` (Cursor's recurring self-wake) → `terminal(background=true)` with a sleep loop, or a `cronjob` when the cadence is 30min+; report each iteration per autonomous-run.md.
-- `scripts/watch-pr` (PR merge-state watcher) → `gh pr view --json mergeable,state,statusCheckRollup` via `terminal`.
-- `scripts/orch` (orchestration runner) → `delegate_task` batch spawns per orchestrate.md.
+- pstack's watch-pr tool (PR merge-state watcher) → `gh pr view --json mergeable,state,statusCheckRollup` via `terminal`. (The original bun scripts were not ported.)
+- pstack's orch runner (orchestration) → `delegate_task` batch spawns per orchestrate.md. (Not ported.)
 - pstack's agent-store `docs/` → `~/.hermes/plans/` or the repo's own `docs/`.
 - `~/.cursor/rules/pstack-models.mdc` model panels (arena/swarm/interrogate) → not ported; ignore model lists entirely, run all roles on the parent chat model.
 - References keep their original frontmatter (harmless; these are read via `skill_view` file reads / `read_file`, not the skill loader). Playbooks mention Cursor-isms (`/loop`, `Task` calls, bugbot, model routing): translate them on the fly per this table, and ignore per-model defaults — this port runs the parent chat model everywhere.
