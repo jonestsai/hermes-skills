@@ -48,12 +48,17 @@ Rigorous, verifiable engineering discipline: reproduce before fixing, root cause
 
 ## Reference index
 
-- `references/playbooks/` — 23 task playbooks
-- `references/principles/` — 21 engineering principles
-- `references/workflow/` — how, why, interrogate, architect, swarm, arena, reflect, show-me-your-work, blast-radius, recall, technical-writing, unslop, deslop, tdd, teach, figure-it-out, create/maintain-verification-skill (+ supporting refs)
-- `references/agents/` — comment-sicko, poteto-agent briefs
-- `references/no-comments.md` — comment triage orchestration
-- `references/bugbot-triage.md` — review-automation comment triage
+Playbooks (`references/playbooks/`): authoring-a-skill.md, autonomous-run.md, autopilot-full.md, autopilot-stack.md, babysit.md, bug-fix.md, eval.md, feature.md, hillclimb.md, investigation.md, multi-phase-plan.md, opening-a-pr.md, orchestrate.md, pause-safely.md, perf-issue.md, prototype.md, refactoring.md, runtime-forensics.md, session-pickup.md, shipping.md, trace-forensics.md, visual-parity.md, worktree-cleanup.md.
+
+Principles (`references/principles/`): principle-boundary-discipline.md, principle-build-the-lever.md, principle-encode-lessons-in-structure.md, principle-exhaust-the-design-space.md, principle-experience-first.md, principle-fix-root-causes.md, principle-foundational-thinking.md, principle-guard-the-context-window.md, principle-laziness-protocol.md, principle-make-operations-idempotent.md, principle-migrate-callers-then-delete-legacy-apis.md, principle-minimize-reader-load.md, principle-model-the-domain.md, principle-never-block-on-the-human.md, principle-outcome-oriented-execution.md, principle-prove-it-works.md, principle-redesign-from-first-principles.md, principle-separate-before-serializing-shared-state.md, principle-sequence-verifiable-units.md, principle-subtract-before-you-add.md, principle-type-system-discipline.md.
+
+Workflow (`references/workflow/`): architect.md, arena.md, blast-radius.md, create-verification-skill.md, deslop.md, figure-it-out.md, how.md, interrogate.md, maintain-verification-skill.md, recall.md, reflect.md, show-me-your-work.md, swarm.md, tdd.md, teach.md, technical-writing.md, unslop.md, why.md — plus their supporting files: `references/workflow/how-refs/critic-prompt.md`, `references/workflow/how-refs/critique-rubric.md`, `references/workflow/how-refs/explainer-prompt.md`, `references/workflow/how-refs/explorer-prompt.md`, `references/workflow/interrogate-refs/code-quality-review.md`, `references/workflow/interrogate-refs/lead-judgment.md`, `references/workflow/interrogate-refs/reviewer-prompt.md`, `references/workflow/interrogate-refs/rubric.md`, `references/workflow/reflect-refs/divergent-reviewer.md`, `references/workflow/reflect-refs/judgment-reviewer.md`, `references/workflow/reflect-refs/synthesizer.md`, `references/workflow/reflect-refs/tooling-reviewer.md`, `references/workflow/show-me-your-work-refs/decision-log-template.tsv`, `references/workflow/show-me-your-work-scripts/log.sh`, `references/workflow/typescript-refs/patterns.md`, `references/workflow/why-refs/epistemics.md`, `references/workflow/why-refs/investigator-prompt.md`, `references/workflow/why-refs/source-playbook.md`, `references/workflow/why-refs/sources/code-archaeology.md`, `references/workflow/why-refs/sources/databricks.md`, `references/workflow/why-refs/sources/datadog.md`, `references/workflow/why-refs/sources/incident-postmortem.md`, `references/workflow/why-refs/sources/linear.md`, `references/workflow/why-refs/sources/notion.md`, `references/workflow/why-refs/sources/sentry.md`, `references/workflow/why-refs/sources/slack.md`, `references/workflow/why-refs/sources/synthesizer-prompt.md`, `references/workflow/create-verification-refs/feature-map-example/README.md`, `references/workflow/create-verification-refs/feature-map-example/create-note.md`, `references/workflow/create-verification-refs/feature-map-example/search.md`.
+
+Agents (`references/agents/`): comment-sicko.md, poteto-agent.md.
+
+Standalone: `references/no-comments.md`, `references/bugbot-triage.md`.
+
+(Install note: the skills hub bundles exactly the files listed above — this index doubles as the bundle manifest, so keep it in sync when files are added or removed.)
 
 ## Verification
 
