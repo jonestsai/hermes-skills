@@ -45,6 +45,7 @@ Rigorous, verifiable engineering discipline: reproduce before fixing, root cause
 - pstack's orch runner (orchestration) → `delegate_task` batch spawns per orchestrate.md. (Not ported.)
 - pstack's agent-store `docs/` → `~/.hermes/plans/` or the repo's own `docs/`.
 - `~/.cursor/rules/pstack-models.mdc` model panels (arena/swarm/interrogate) → not ported; ignore model lists entirely, run all roles on the parent chat model.
+- pstack's agent transcripts at `~/.cursor/projects/<slug>/agent-transcripts/<uuid>/<uuid>.jsonl` → Hermes session storage: full history lives in each profile's `state.db` (messages table: role/content/tool_calls/reasoning/timestamp, plus a `summary` row after compression). Read via the `session_search` tool (query/scroll), NOT by parsing transcripts from disk; for exact-order reads use sqlite3 against `<profile>/state.db`. Affects recall.md, reflect.md, show-me-your-work.md, session-pickup.md, eval.md, orchestrate.md.
 - References keep their original frontmatter (harmless; these are read via `skill_view` file reads / `read_file`, not the skill loader). Playbooks mention Cursor-isms (`/loop`, `Task` calls, bugbot, model routing): translate them on the fly per this table, and ignore per-model defaults — this port runs the parent chat model everywhere.
 
 ## Reference index
